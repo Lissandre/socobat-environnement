@@ -5,6 +5,9 @@ export default {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'fr'
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -23,6 +26,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/style/common.styl'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -44,8 +48,13 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    // Doc : https://github.com/nuxt-community/style-resources-module
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    stylus: './assets/style/*.styl'
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
