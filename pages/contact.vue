@@ -1,0 +1,14 @@
+<template>
+  <div class="contact">
+    <h1>Contact</h1>
+  </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style lang="stylus">
+.contact
+  background #fff
+</style>
