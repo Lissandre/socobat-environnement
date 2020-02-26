@@ -1,7 +1,7 @@
 <template>
   <nav class="footer">
     <span>
-      © Copyright 2020 Shaftee | Tous droits réservés
+      © Copyright 2020 SOCOBAT Environnement | Tous droits réservés
     </span>
     <nuxt-link to="/mentions-legales">
       Mentions Légales
