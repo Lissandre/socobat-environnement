@@ -2,7 +2,7 @@
   <nav class="nav">
     <div class="logo">
       <nuxt-link to="/">
-        SOCOBAT
+        <img src="@/assets/images/logo_socobat_environnement.svg" alt="Logo Socobat Environnement SVG">
       </nuxt-link>
     </div>
     <div class="linksList">
@@ -39,9 +39,13 @@ export default {}
 .nav
   position fixed
   width 100%
-  padding 20px 5%
+  padding 10px 5%
   display flex
   justify-content space-between
+  align-items center
+
+.logo a img
+  height 40px
 
 .linksList a
   position relative
@@ -61,11 +65,11 @@ export default {}
   &:after
     right 0px
     transition 0.404s width ease
-    background $green
+    background $lightgreen
   &:hover:before
     width 100%
     transition 0.404s width ease
-    background $green
+    background $lightgreen
   &:hover:after
     width 100%
     background transparent
