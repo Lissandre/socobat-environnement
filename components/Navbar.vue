@@ -44,7 +44,29 @@ export default {}
   justify-content space-between
 
 .linksList a
+  position relative
+  display inline-block
   color $green
+  text-transform uppercase
   &:not(:first-child)
     margin-left 15px
+  &:before, &:after
+    content ''
+    position absolute
+    top 50%
+    width 0%
+    height 2px
+  &:before
+    left 0px
+  &:after
+    right 0px
+    transition 0.404s width ease
+    background $green
+  &:hover:before
+    width 100%
+    transition 0.404s width ease
+    background $green
+  &:hover:after
+    width 100%
+    background transparent
 </style>
