@@ -3,13 +3,13 @@
     <span>
       © Copyright 2020 SOCOBAT Environnement | Tous droits réservés
     </span>
-    <nuxt-link to="/mentions-legales">
+    <nuxt-link :to="{name: 'mentions-legales'}">
       Mentions Légales
     </nuxt-link>
-    <nuxt-link to="/confidentialite">
+    <nuxt-link :to="{name: 'confidentialite'}">
       Politique de Confidentialité
     </nuxt-link>
-    <nuxt-link to="/contact">
+    <nuxt-link :to="{name: 'contact'}">
       Contact
     </nuxt-link>
   </nav>
@@ -29,10 +29,9 @@ export default {}
   padding 10px 0
 
 .footer a
-  color $green
+  color $black
   &:before
     content '|'
     margin-left 4px
-    color $black
     cursor text
 </style>
