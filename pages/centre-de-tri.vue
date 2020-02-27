@@ -1,6 +1,8 @@
 <template>
   <div class="tri">
-    <h1>Centre de tri</h1>
+    <h1>
+      Centre de tri
+    </h1>
   </div>
 </template>
 

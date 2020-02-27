@@ -12,50 +12,13 @@
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link :to="{name: 'services-location-bennes'}">
-          Location de bennes
-        </nuxt-link>
-      </li>
-      <li>
         <nuxt-link :to="{name: 'centre-de-tri'}">
           Centre de tri
         </nuxt-link>
       </li>
-      <li class="headScrollingMenu">
-        <nuxt-link :to="{name: 'services'}">
-          Services
-        </nuxt-link>
-        <ul class="scrollingMenu">
-          <li>
-            <nuxt-link :to="{name: 'services-location-de-materiel'}">
-              Location de matériel
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link :to="{name: 'services-depot-de-dechets'}">
-              Dépôt de déchets
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link :to="{name: 'services-evacuation-de-dechets'}">
-              Évacuation de déchets
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link :to="{name: 'services-diagnostic-de-pollution'}">
-              Diagnostic de pollution
-            </nuxt-link>
-          </li>
-        </ul>
-      </li>
       <li>
         <nuxt-link :to="{name: 'devis'}">
           Votre devis
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="{name: 'a-propos'}">
-          À propos
         </nuxt-link>
       </li>
       <li>
@@ -96,7 +59,7 @@ export default {}
     align-items center
     height 100%
     &:not(:first-child)
-      margin-left 15px
+      margin-left 25px
     & a
       position relative
       display flex
