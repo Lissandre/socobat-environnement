@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <h1>Accueil</h1>
+  <div class="depot">
+    <h1>Dépot de déchets</h1>
   </div>
 </template>
 
@@ -9,6 +9,6 @@ export default {}
 </script>
 
 <style lang="stylus">
-.home
+.depot
   background #fff
 </style>
