@@ -27,22 +27,22 @@
         </nuxt-link>
         <ul class="scrollingMenu">
           <li>
-            <nuxt-link :to="{name: 'location-de-materiel'}">
+            <nuxt-link :to="{name: 'services-location-de-materiel'}">
               Location de matériel
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="{name: 'depot-de-dechets'}">
+            <nuxt-link :to="{name: 'services-depot-de-dechets'}">
               Dépôt de déchets
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="{name: 'evacuation-de-dechets'}">
+            <nuxt-link :to="{name: 'services-evacuation-de-dechets'}">
               Évacuation de déchets
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="{name: 'diagnostic-de-pollution'}">
+            <nuxt-link :to="{name: 'services-diagnostic-de-pollution'}">
               Diagnostic de pollution
             </nuxt-link>
           </li>
