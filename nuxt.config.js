@@ -14,15 +14,31 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
       { name: 'msapplication-TileColor', content: process.env.theme_color || '#ffffff' },
-      { name: 'theme-color', content: process.env.theme_color || '#ffffff' }
+      { name: 'theme-color', content: process.env.theme_color || '#ffffff' },
+
+      { itemprop: 'name', content: 'Socobat Environnement' },
+      { itemprop: 'description', content: 'Socobat Environnement Description' },
+      { itemprop: 'image', content: 'https://socobat-environnement.fr/social/share-1200x630.jpg' },
+
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Socobat Environnement' },
+      { name: 'twitter:description', content: 'Socobat Environnement Description' },
+      { name: 'twitter:image', content: 'https://socobat-environnement.fr/social/share-1200x600.jpg' },
+
+      { property: 'og:site_name', content: 'Socobat Environnement' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://socobat-environnement.fr' },
+      { property: 'og:title', content: 'Socobat Environnement' },
+      { property: 'og:description', content: 'Socobat Environnement Description' },
+      { property: 'og:image', content: 'https://socobat-environnement.fr/social/share-1200x630.jpg' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png' },
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
-      { rel: 'manifest', href: '/site.webmanifest' },
-      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#006633' }
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: 'favicon/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', href: 'favicon/favicon-16x16.png' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: 'favicon/apple-touch-icon.png' },
+      { rel: 'manifest', href: 'favicon/site.webmanifest' },
+      { rel: 'mask-icon', href: 'favicon/safari-pinned-tab.svg', color: '#006633' }
     ]
   },
   /*
