@@ -124,6 +124,8 @@ export default {}
       &:hover:after
         width 100%
         background transparent
+      &.nuxt-link-exact-active
+        color $lightergreen
 
 .headScrollingMenu
   & .scrollingMenu
