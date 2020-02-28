@@ -71,7 +71,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
+    ['@nuxtjs/dotenv', { path: './' }],
     // Doc : https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources'
   ],
