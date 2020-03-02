@@ -57,7 +57,7 @@
         </h2>
         <p>
           Comment notre système fonctionne ? <br>
-          Nos prix sont entièrement transparents. En cliquant sur l’onglet “Devis”, vous êtes amené à sélectionner les services que vous nous demandez, puis un devis sera automatiquement généré avec le prix que cette prestation vous côuterait. Il ne reste plus qu`à nous contacter si notre proposition vous convient, et nous nous chargeons du reste ! La création d’un devis est entièrement gratuite et transparente.
+          Nos prix sont entièrement transparents. En cliquant sur l’onglet “Devis”, vous êtes amené à sélectionner les services que vous nous demandez, puis un devis sera automatiquement généré avec le prix que cette prestation vous côuterait. Il ne reste plus qu'à nous contacter si notre proposition vous convient, et nous nous chargeons du reste ! La création d’un devis est entièrement gratuite et transparente.
         </p>
       </div>
     </div>
@@ -101,7 +101,7 @@ export default {
     width 45%
 
 .servicesList
-  width 30%
+  width 35%
   margin 5% auto 2% auto
   text-align center
 </style>
