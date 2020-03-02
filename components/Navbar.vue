@@ -5,23 +5,27 @@
         <img src="@/assets/images/logo_socobat_environnement.svg" alt="Logo Socobat Environnement SVG">
       </nuxt-link>
     </div>
-    <ul class="linksList">
-      <li>
+    <div class="hamburgerButton" @click="changeMenu()">
+      <img v-if="!menu" src="@/assets/images/menu/menu.svg" alt="Icone menu fermé hamburger Socobat Environnement">
+      <img v-if="menu" src="@/assets/images/menu/cross.svg" alt="Icone menu ouvert hamburger Socobat Environnement">
+    </div>
+    <ul class="linksList" :class="{ open: menu }">
+      <li @click="closeMenu()">
         <nuxt-link :to="{name: 'index'}">
           Accueil
         </nuxt-link>
       </li>
-      <li>
+      <li @click="closeMenu()">
         <nuxt-link :to="{name: 'centre-de-tri'}">
           Centre de tri
         </nuxt-link>
       </li>
-      <li>
+      <li @click="closeMenu()">
         <nuxt-link :to="{name: 'devis'}">
           Votre devis
         </nuxt-link>
       </li>
-      <li>
+      <li @click="closeMenu()">
         <nuxt-link :to="{name: 'contact'}">
           Contact
         </nuxt-link>
@@ -31,7 +35,23 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data: () => {
+    return {
+      menu: false
+    }
+  },
+  methods: {
+    changeMenu () {
+      this.menu = !this.menu
+    },
+    closeMenu () {
+      if (this.menu === true) {
+        this.menu = false
+      }
+    }
+  }
+}
 </script>
 
 <style lang="stylus">
@@ -45,9 +65,14 @@ export default {}
   justify-content space-between
   align-items center
   box-shadow $shadow
+  z-index 2
 
 .logo a img
   height 40px
+
+.hamburgerButton
+  display none
+  cursor pointer
 
 .linksList
   background $white
@@ -115,4 +140,31 @@ export default {}
         all inherit
   &:hover .scrollingMenu
     opacity 1
+
+@media screen and (max-width: 840px)
+  .hamburgerButton
+    display block
+
+  .linksList
+    position fixed
+    top 0
+    left 0
+    height 100%
+    width 100%
+    padding 40% 0
+    z-index -1
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    transform translateX(100%)
+    transition 0.42s transform ease
+    &.open
+      transform translateX(0)
+    & li
+      font-size 24px
+      font-weight bold
+      text-align center
+      &:not(:first-child)
+        margin-left 0px
 </style>

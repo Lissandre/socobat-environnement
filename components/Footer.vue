@@ -34,4 +34,11 @@ export default {}
     content '|'
     margin-left 4px
     cursor text
+
+@media screen and (max-width: 840px)
+  .footer
+    flex-direction column-reverse
+    align-items center
+    & a:before
+      display none
 </style>
