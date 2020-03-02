@@ -22,10 +22,9 @@ export default {}
 <style lang="stylus">
 .footer
   width 100%
-  position absolute
-  bottom 0
   display flex
   justify-content center
+  margin-top 20px
   padding 10px 0
 
 .footer a

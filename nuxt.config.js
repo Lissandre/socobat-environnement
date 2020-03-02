@@ -135,7 +135,7 @@ export default {
       '/Vaujours',
       '/Villemomble',
       '/Villepinte',
-      '/Villetaneuse',   
+      '/Villetaneuse'
     ]
   }
 }

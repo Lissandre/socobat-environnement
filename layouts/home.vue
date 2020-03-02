@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar />
+    <TopPage />
     <div class="container">
       <nuxt />
     </div>
@@ -10,10 +11,12 @@
 
 <script>
 import Navbar from '@/components/Navbar'
+import TopPage from '@/components/TopPage'
 import Footer from '@/components/Footer'
 export default {
   components: {
     Navbar,
+    TopPage,
     Footer
   },
   mounted: () => {
@@ -48,8 +51,5 @@ a
   text-decoration none
 
 .container
-  padding-top 100px
-  box-sizing border-box
   margin 0 10%
-  min-height calc(var(--vh, 1vh) * 100)
 </style>
