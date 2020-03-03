@@ -16,6 +16,7 @@
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "@nuxtjs/style-resources": "^1.0.0",
+    "iframe-resizer": "^4.2.10",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {

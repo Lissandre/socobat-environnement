@@ -3,32 +3,34 @@
     <h2>Nos services</h2>
     <div class="services">
       <div class="service">
-        <img src="@/assets/images/placeholder.png" alt="">
+        <img src="@/assets/images/gravat.png" alt="">
         <span>
           Évacuation des déchets
         </span>
       </div>
       <div class="service">
-        <img src="@/assets/images/placeholder.png" alt="">
+        <img src="@/assets/images/camion.png" alt="">
         <span>
           Location de matériels
         </span>
       </div>
       <div class="service">
-        <img src="@/assets/images/placeholder.png" alt="">
+        <img src="@/assets/images/centre.png" alt="">
         <span>
           Dépôt des déchets
         </span>
       </div>
       <div class="service">
-        <img src="@/assets/images/placeholder.png" alt="">
+        <img src="@/assets/images/trou.png" alt="">
         <span>
           Diagnostic de pollution
         </span>
       </div>
     </div>
     <div class="bloc">
-      <img src="@/assets/images/placeholder.png" alt="">
+      <div class="imageMask">
+        <img src="@/assets/images/dechet.jpg" alt="">
+      </div>
       <div class="text">
         <p>
           Besoin d’évacuer ou de traiter vos déchets ? Besoin d’un diagnostic de pollution du sol ? Besoin de matériel pour rassembler vos déchets de chantier ? Socobat Environnement est spécialisé dans l’évacuation et le dépot de vos déchets de chantier. Nous vous proposons la location de matériel et des prestations clé en main pour la gestion de vos déchets, dans tout le département de la Seine-saint-Denis (93). <br>
@@ -38,8 +40,10 @@
       </div>
     </div>
     <AskDevis />
-    <div class="bloc">
-      <img src="@/assets/images/placeholder.png" alt="">
+    <div class="bloc reverse">
+      <div class="imageMask">
+        <img src="@/assets/images/socobat.jpg" alt="">
+      </div>
       <div class="text">
         <h2>
           Qui sommes-nous ?
@@ -50,7 +54,9 @@
       </div>
     </div>
     <div class="bloc">
-      <img src="@/assets/images/placeholder.png" alt="">
+      <div class="imageMask">
+        <img src="@/assets/images/devis.jpg" alt="">
+      </div>
       <div class="text">
         <h2>
           Votre devis
@@ -89,16 +95,30 @@ export default {
     width 16%
     text-align center
     & img
-      width 100%
+      width 80%
       border-radius 50%
+    & span
+      font-size 20px
 
 .bloc
   display flex
   align-items center
   justify-content space-between
   width 100%
-  & .text, img
+  margin 5% 0
+  &.reverse
+    flex-direction row-reverse
+  & .text
     width 45%
+  & .imageMask
+    width 45%
+    height 400px
+    overflow hidden
+    display flex
+    justify-content center
+    align-items center
+    & img
+      width 100%
 
 .servicesList
   width 35%
