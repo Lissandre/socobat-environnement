@@ -69,9 +69,10 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/proxy',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    ['@nuxtjs/dotenv', { path: './' }],
+    ['@nuxtjs/dotenv', { path: '/' }],
     // Doc : https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources'
   ],
@@ -83,6 +84,13 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    proxy: true
+  },
+  proxy: {
+    '/api/': {
+      target: 'https://api.typeform.com/',
+      pathRewrite: {'^/api/': ''}
+    }
   },
   /*
   ** Build configuration
