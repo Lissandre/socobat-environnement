@@ -22,19 +22,19 @@ export default {
 
       { itemprop: 'name', content: 'Socobat Environnement' },
       { itemprop: 'description', content: 'Socobat Environnement Description' },
-      { itemprop: 'image', content: 'https://socobat-environnement.fr/social/share-1200x630.jpg' },
+      { itemprop: 'image', content: 'https://socobat-environnement.netlify.com/social/share-1200x630.jpg' },
 
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Socobat Environnement' },
       { name: 'twitter:description', content: 'Socobat Environnement Description' },
-      { name: 'twitter:image', content: 'https://socobat-environnement.fr/social/share-1200x600.jpg' },
+      { name: 'twitter:image', content: 'https://socobat-environnement.netlify.com/social/share-1200x600.jpg' },
 
       { property: 'og:site_name', content: 'Socobat Environnement' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://socobat-environnement.fr' },
+      { property: 'og:url', content: 'https://socobat-environnement.netlify.com' },
       { property: 'og:title', content: 'Socobat Environnement' },
       { property: 'og:description', content: 'Socobat Environnement Description' },
-      { property: 'og:image', content: 'https://socobat-environnement.fr/social/share-1200x630.jpg' }
+      { property: 'og:image', content: 'https://socobat-environnement.netlify.com/social/share-1200x630.jpg' }
     ],
     link: [
       // { rel: 'icon', type: 'image/x-icon', href: 'favicon/favicon.ico' },
@@ -76,7 +76,7 @@ export default {
     '@nuxtjs/proxy',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    ['@nuxtjs/dotenv', { path: '/' }],
+    ['@nuxtjs/dotenv', { path: './' }],
     // Doc : https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources'
   ],
