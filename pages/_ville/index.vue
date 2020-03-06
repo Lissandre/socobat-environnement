@@ -108,4 +108,10 @@ export default {
   margin-bottom 5%
   & p
     margin-bottom 2%
+
+@media screen and (max-width: 840px)
+  .textCity
+    padding-top 15%
+    & p, & h1
+      width 100%
 </style>
