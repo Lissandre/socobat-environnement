@@ -40,7 +40,7 @@
       </div>
     </div>
     <AskDevis />
-    <div class="bloc reverse">
+    <div class="bloc reverse mobileReverse">
       <div class="imageMask">
         <img src="@/assets/images/socobat.jpg" alt="">
       </div>
@@ -53,7 +53,7 @@
         </p>
       </div>
     </div>
-    <div class="bloc">
+    <div class="bloc mobileReverse">
       <div class="imageMask">
         <img src="@/assets/images/devis.jpg" alt="">
       </div>
@@ -124,4 +124,36 @@ export default {
   width 35%
   margin 5% auto 2% auto
   text-align center
+
+@media screen and (max-width: 840px)
+  .services
+    margin-top 50px
+    flex-direction row
+    flex-wrap wrap
+    & .service
+      width 45%
+      display flex
+      align-items center
+      justify-content space-between
+      flex-direction column
+      margin-bottom 10%
+      & img
+        width 80%
+
+  .bloc
+    flex-direction column
+    & .text, & .imageMask
+      width 100%
+      height auto
+      margin-bottom 10%
+    & .text
+      & p
+        font-size 16px
+    &.mobileReverse
+      flex-direction column-reverse
+      margin-top 15%
+
+  .servicesList
+    margin 40% 0
+    width 100%
 </style>

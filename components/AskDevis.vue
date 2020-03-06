@@ -19,4 +19,8 @@ export default {}
   display block
   width fit-content
   margin 0 auto
+
+@media screen and (max-width: 840px)
+  .devisButton
+    padding 20px 40px
 </style>

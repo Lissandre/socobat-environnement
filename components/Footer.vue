@@ -36,7 +36,10 @@ export default {}
 
 @media screen and (max-width: 840px)
   .footer
+    margin 20% 0 10% 0
+    padding 0 10%
     flex-direction column-reverse
+    text-align center
     align-items center
     & a:before
       display none

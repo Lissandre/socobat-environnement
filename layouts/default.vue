@@ -52,4 +52,8 @@ a
   box-sizing border-box
   margin 0 10%
   min-height calc(var(--vh, 1vh) * 100)
+
+@media screen and (max-width: 840px)
+  .container
+    padding-top 50px
 </style>

@@ -61,6 +61,12 @@ export default {
     height 50%
     & h1
       visibility hidden
+    & .contactList p
+      & span
+        font-size 18px
+        font-weight normal
+      & a
+        font-size 20px
 
 @media screen and (max-width: 420px)
   .contact

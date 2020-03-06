@@ -144,6 +144,9 @@ export default {
 @media screen and (max-width: 840px)
   .hamburgerButton
     display block
+    height 50%
+    & img
+      height 100%
 
   .linksList
     position fixed
