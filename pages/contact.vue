@@ -52,4 +52,18 @@ export default {
       color $green
       &:hover
         color $lightgreen
+
+@media screen and (max-width: 840px)
+  .contact
+    padding-top 10%
+    position inherit
+    width 100%
+    height 50%
+    & h1
+      visibility hidden
+
+@media screen and (max-width: 420px)
+  .contact
+      height 100%
+      padding 0 5%
 </style>
