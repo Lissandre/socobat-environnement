@@ -33,12 +33,12 @@ export default {
       { property: 'og:image', content: 'https://socobat-environnement.fr/social/share-1200x630.jpg' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'favicon/favicon.ico' },
-      { rel: 'icon', type: 'image/png', href: 'favicon/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', href: 'favicon/favicon-16x16.png' },
-      { rel: 'apple-touch-icon', sizes: '180x180', href: 'favicon/apple-touch-icon.png' },
-      { rel: 'manifest', href: 'favicon/site.webmanifest' },
-      { rel: 'mask-icon', href: 'favicon/safari-pinned-tab.svg', color: '#006633' }
+      // { rel: 'icon', type: 'image/x-icon', href: 'favicon/favicon.ico' },
+      // { rel: 'icon', type: 'image/png', href: 'favicon/favicon-32x32.png' },
+      // { rel: 'icon', type: 'image/png', href: 'favicon/favicon-16x16.png' },
+      // { rel: 'apple-touch-icon', sizes: '180x180', href: 'favicon/apple-touch-icon.png' },
+      // { rel: 'manifest', href: 'favicon/site.webmanifest' },
+      // { rel: 'mask-icon', href: 'favicon/safari-pinned-tab.svg', color: '#006633' }
     ]
   },
   /*
@@ -84,12 +84,13 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    proxy: true
+    proxy: true,
+    debug: true
   },
   proxy: {
     '/api/': {
       target: 'https://api.typeform.com/',
-      pathRewrite: {'^/api/': ''}
+      pathRewrite: { '^/api/': '' }
     }
   },
   /*

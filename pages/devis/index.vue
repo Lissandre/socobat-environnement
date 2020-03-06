@@ -1,7 +1,8 @@
 <template>
   <div class="devis">
     <h1>Devis</h1>
-    <h2>FORMULAIRE</h2>
+    <div class="js-typeform-embed" />
+    <!-- <h2>FORMULAIRE</h2>
     <div v-for="(item, index) in form.items" :key="index">
       <h3>Réponse {{ index }} au formulaire</h3>
       <div v-for="(answer, indexa) in item.answers" :key="indexa">
@@ -27,7 +28,7 @@
           Services demandés: <span v-for="(choice, indexb) in answer.choices.labels" :key="indexb">{{ choice }}</span>
         </p>
       </div>
-    </div>
+    </div> -->
     <nuxt-link :to="{name: 'devis-votre_devis'}">
       Lien provisoire
     </nuxt-link>
@@ -35,13 +36,29 @@
 </template>
 
 <script>
+import * as typeformEmbed from '@typeform/embed'
 export default {
   async asyncData ({ $axios }) {
     $axios.setToken('HYqKJuaY6eNjL9CDvi3e5gcTjsJwLQnsj1y4KCYEzAhD', 'Bearer')
-    $axios.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
     const form = (await $axios.get('api/forms/j4BLf5/responses')).data
 
     return { form }
+  },
+  mounted: () => {
+    const embedElement = document.querySelector('.js-typeform-embed')
+    typeformEmbed.makeWidget(
+      embedElement,
+      'https://admin.typeform.com/to/j4BLf5',
+      {
+        opacity: 0,
+        buttonText: 'Answer this!',
+        hideScrollbars: true,
+        onSubmit: () => {
+          // eslint-disable-next-line
+          console.log('ok')
+        }
+      }
+    )
   }
 }
 </script>
@@ -59,6 +76,9 @@ export default {
 h3
   margin-top 5%
   margin-bottom 1%
+
+.js-typeform-embed
+  height 75vh
 
 button
   padding 1% 5%
