@@ -20,7 +20,8 @@
     "@typeform/embed": "^0.16.0",
     "iframe-resizer": "^4.2.10",
     "jspdf": "^1.5.3",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "nuxt-start": "^2.13.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
