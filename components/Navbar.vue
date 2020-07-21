@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="nav transp">
     <div class="logo">
       <nuxt-link to="/">
         <img src="@/assets/images/logo_socobat_environnement.svg" alt="Logo Socobat Environnement SVG">
@@ -21,13 +21,13 @@
         </nuxt-link>
       </li>
       <li @click="closeMenu()">
-        <nuxt-link :to="{name: 'devis'}">
-          Votre devis
+        <nuxt-link :to="{name: 'contact'}">
+          Contact
         </nuxt-link>
       </li>
       <li @click="closeMenu()">
-        <nuxt-link :to="{name: 'contact'}">
-          Contact
+        <nuxt-link :to="{name: 'demande-de-devis'}">
+          Votre devis
         </nuxt-link>
       </li>
     </ul>
@@ -40,6 +40,13 @@ export default {
     return {
       menu: false
     }
+  },
+  // eslint-disable-next-line
+  mounted: function () {
+    const nav = document.querySelector('nav')
+    window.addEventListener('scroll', function () {
+      if (scrollY > 0) { nav.classList.add('white'); nav.classList.remove('transp') } else if (scrollY === 0) { nav.classList.add('transp'); nav.classList.remove('white') }
+    })
   },
   methods: {
     changeMenu () {
@@ -56,16 +63,21 @@ export default {
 
 <style lang="stylus">
 .nav
-  background $white
   position fixed
+  top 0
   width 100%
-  height 70px
+  height 100px
   padding 0 5%
   display flex
   justify-content space-between
   align-items center
-  box-shadow $shadow
   z-index 2
+  transition 0.52s background ease, 0.32s box-shadow ease
+  &.white
+    background $white
+    box-shadow $shadow
+  &.transp a
+    color $white
 
 .logo a img
   height 40px
@@ -75,7 +87,7 @@ export default {
   cursor pointer
 
 .linksList
-  background $white
+  // background $white
   display flex
   height 100%
   & li
@@ -90,30 +102,19 @@ export default {
       display flex
       height 100%
       align-items center
-      color $darkgreen
+      color $green
       text-transform uppercase
-      transition color 0.23s ease
-      &:before, &:after
-        content ''
-        position absolute
-        top 50%
-        width 0%
-        height 2px
-      &:before
-        left 0px
-      &:after
-        right 0px
-        transition 0.404s width ease
-        background $lightergreen
-      &:hover:before
-        width 100%
-        transition 0.404s width ease
-        background $lightergreen
-      &:hover:after
-        width 100%
-        background transparent
-      &.nuxt-link-exact-active
+      &:hover
+        transition color 0.23s ease
         color $lightergreen
+    &:last-child a
+      background $green
+      height auto
+      padding 12px 20px
+      color $white
+      transition 0.3s transform ease
+      &:hover
+        transform scale(0.95)
 
 .headScrollingMenu
   & .scrollingMenu

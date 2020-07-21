@@ -25,13 +25,16 @@ export default {
 
 <style lang="stylus">
 .topPage
-  background $grey
+  background linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('~assets/images/stock-photo-a-man-sits-a-ready-sprout-in-the-ground-restoration-of-ecology-new-world-top-view-1706661337.jpg')
+  background-size cover
+  background-position center center
   width 100%
   height calc(var(--vh, 1vh) * 100)
   display flex
   justify-content center
   align-items center
   flex-direction column
+  color $white
   & h1
     font-size 64px
     font-weight bold

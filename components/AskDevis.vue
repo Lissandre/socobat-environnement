@@ -19,6 +19,9 @@ export default {}
   display block
   width fit-content
   margin 0 auto
+  transition 0.3s transform ease
+  &:hover
+    transform scale(0.95)
 
 @media screen and (max-width: 840px)
   .devisButton
