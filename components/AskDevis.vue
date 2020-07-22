@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="{name: 'devis'}" class="devisButton">
+  <nuxt-link :to="{name: 'demande-de-devis'}" class="devisButton">
     Demander un devis
   </nuxt-link>
 </template>
