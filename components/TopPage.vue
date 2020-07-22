@@ -7,7 +7,7 @@
       </span>
     </h1>
     <AskDevis />
-    <div class="scrollIndicator">
+    <div class="scrollIndicator" @click="scrollClick()">
       En savoir plus
       <img src="@/assets/images/chevron-down.svg" alt="chevron down svg">
     </div>
@@ -15,10 +15,16 @@
 </template>
 
 <script>
+import animateScrollTo from 'animated-scroll-to'
 import AskDevis from '@/components/AskDevis'
 export default {
   components: {
     AskDevis
+  },
+  methods: {
+    scrollClick () {
+      animateScrollTo(window.innerHeight - document.querySelector('#nav').offsetHeight)
+    }
   }
 }
 </script>
@@ -53,6 +59,7 @@ export default {
   bottom 5%
   display flex
   flex-direction column
+  cursor pointer
 
 @media screen and (max-width: 840px)
   .topPage
