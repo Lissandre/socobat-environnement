@@ -2,9 +2,8 @@
   <p class="citiesList">
     <span v-for="(ville, index) in villes" :key="index">
       <nuxt-link :to="{ name: 'ville', params: { ville: ville.name }}">
-        {{ ville.name }}
+        {{ ville.name }} ({{ ville.zip }})
       </nuxt-link>
-      ({{ ville.zip }})
     </span>
   </p>
 </template>
@@ -22,4 +21,6 @@ export default {
 <style lang="stylus">
 .citiesList
   text-align center
+  & span:not(:last-child)::after
+    content '-'
 </style>

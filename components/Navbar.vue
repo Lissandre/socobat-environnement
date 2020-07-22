@@ -44,8 +44,6 @@ export default {
   // eslint-disable-next-line
   mounted: function () {
     if (this.$route.name === 'index') {
-      // eslint-disable-next-line
-      console.log('ok')
       const nav = document.querySelector('nav')
       window.addEventListener('scroll', function () {
         if (scrollY > 0) { nav.classList.add('white'); nav.classList.remove('transp') } else if (scrollY === 0) { nav.classList.add('transp'); nav.classList.remove('white') }
@@ -60,6 +58,7 @@ export default {
     closeMenu () {
       if (this.menu === true) {
         this.menu = false
+        document.querySelector('body').classList.toggle('freeze')
       }
     }
   }
