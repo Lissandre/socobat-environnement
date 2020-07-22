@@ -1,5 +1,5 @@
 <template>
-  <div class="devis main">
+  <div class="devis">
     <div class="js-typeform-embed" />
   </div>
 </template>
@@ -36,5 +36,4 @@ export default {
 
 .js-typeform-embed
   height 90%
-  border 1px solid red
 </style>

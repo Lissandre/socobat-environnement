@@ -54,6 +54,6 @@ export default {
       width 100%
 
 @media screen and (max-width: 420px)
-  iframe
+  .contactPage iframe
     display none
 </style>
