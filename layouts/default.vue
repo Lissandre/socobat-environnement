@@ -48,7 +48,7 @@ a
   text-decoration none
 
 .container
-  padding-top 100px
+  padding-top 110px
   box-sizing border-box
   margin 0 10%
   min-height calc(var(--vh, 1vh) * 100)

@@ -1,5 +1,5 @@
 <template>
-  <div class="devis">
+  <div class="devis main">
     <div class="js-typeform-embed" />
   </div>
 </template>
@@ -7,45 +7,34 @@
 <script>
 import * as typeformEmbed from '@typeform/embed'
 export default {
-  async asyncData ({ $axios }) {
-    $axios.setToken('HYqKJuaY6eNjL9CDvi3e5gcTjsJwLQnsj1y4KCYEzAhD', 'Bearer')
-    const form = (await $axios.get('api/forms/j4BLf5/responses')).data
-
-    return { form }
-  },
   mounted: () => {
-    const embedElement = document.querySelector('.js-typeform-embed')
+    const typeform = document.querySelector('.js-typeform-embed')
     typeformEmbed.makeWidget(
-      embedElement,
+      typeform,
       'https://ao-solutions.typeform.com/to/MKAMZl',
       {
-        opacity: 0,
-        buttonText: 'Answer this!',
-        hideScrollbars: true,
-        onSubmit: () => {}
+        hideFooter: true,
+        hideHeaders: true,
+        hideScrollbars: true
       }
     )
+    typeform.querySelector('div').style.height = '100%'
+
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+    window.addEventListener('resize', () => {
+      vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
+    })
   }
 }
 </script>
 
 <style lang="stylus">
 .devis
-  background #fff
-
-.choices
-  & span:not(:last-child)::after
-    content ','
-  & span:not(:first-child)::before
-    content ' '
-
-h3
-  margin-top 5%
-  margin-bottom 1%
+  height calc(var(--vh, 1vh) * 96)
 
 .js-typeform-embed
-  height 75vh
-
-button
-  padding 1% 5%
+  height 90%
+  border 1px solid red
 </style>

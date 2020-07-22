@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav transp">
+  <nav class="nav" :class="this.$route.name === 'index' ? 'transp' : 'white'">
     <div class="logo">
       <nuxt-link to="/">
         <img src="@/assets/images/logo_socobat_environnement.svg" alt="Logo Socobat Environnement SVG">
@@ -43,14 +43,19 @@ export default {
   },
   // eslint-disable-next-line
   mounted: function () {
-    const nav = document.querySelector('nav')
-    window.addEventListener('scroll', function () {
-      if (scrollY > 0) { nav.classList.add('white'); nav.classList.remove('transp') } else if (scrollY === 0) { nav.classList.add('transp'); nav.classList.remove('white') }
-    })
+    if (this.$route.name === 'index') {
+      // eslint-disable-next-line
+      console.log('ok')
+      const nav = document.querySelector('nav')
+      window.addEventListener('scroll', function () {
+        if (scrollY > 0) { nav.classList.add('white'); nav.classList.remove('transp') } else if (scrollY === 0) { nav.classList.add('transp'); nav.classList.remove('white') }
+      })
+    }
   },
   methods: {
     changeMenu () {
       this.menu = !this.menu
+      document.querySelector('body').classList.toggle('freeze')
     },
     closeMenu () {
       if (this.menu === true) {
@@ -116,38 +121,16 @@ export default {
       &:hover
         transform scale(0.95)
 
-.headScrollingMenu
-  & .scrollingMenu
-    background $white
-    position absolute
-    width max-content
-    display flex
-    flex-direction column
-    top 70px
-    padding 0
-    transform translateX(-20px)
-    opacity 0
-    transition 0.42s opacity ease
-    box-shadow $shadow
-    z-index -1
-    & li
-      padding 10px 20px
-      margin 0
-      &:hover
-        background $creamwhite
-        & a
-          color $lightgreen
-      & a:before, a:after
-        all inherit
-  &:hover .scrollingMenu
-    opacity 1
-
 @media screen and (max-width: 840px)
+  .freeze
+    overflow hidden
+
   .hamburgerButton
     display block
-    height 50%
+    height 36%
     & img
       height 100%
+      // width 100%
 
   .linksList
     position fixed
@@ -163,6 +146,7 @@ export default {
     align-items center
     transform translateX(100%)
     transition 0.42s transform ease
+    background $white
     &.open
       transform translateX(0)
     & li
@@ -171,4 +155,9 @@ export default {
       text-align center
       &:not(:first-child)
         margin-left 0px
+      & a
+        color $green
+
+  .nav.transp a
+    color $green
 </style>
