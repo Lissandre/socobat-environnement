@@ -26,9 +26,11 @@ export default {}
   justify-content center
   margin-top 20px
   padding 10px 0
+  & span
+    color $green
 
 .footer a
-  color $black
+  color $green
   &:before
     content '|'
     margin-left 4px
