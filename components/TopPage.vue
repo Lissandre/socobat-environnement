@@ -31,7 +31,7 @@ export default {
 
 <style lang="stylus">
 .topPage
-  background linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('~assets/images/stock-photo-a-man-sits-a-ready-sprout-in-the-ground-restoration-of-ecology-new-world-top-view-1706661337.jpg')
+  background linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('~assets/images/socobat-environnement-bobigny-bennes-traitement-dechet-93.jpg')
   background-size cover
   background-position center center
   width 100%

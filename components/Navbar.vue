@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav" :class="this.$route.name === 'index' ? 'transp' : 'white'" id="nav">
+  <nav id="nav" class="nav" :class="this.$route.name === 'index' ? 'transp' : 'white'">
     <div class="logo">
       <nuxt-link to="/">
         <img src="@/assets/images/logo_socobat_environnement.svg" alt="Logo Socobat Environnement SVG">

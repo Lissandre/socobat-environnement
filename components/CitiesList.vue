@@ -21,6 +21,7 @@ export default {
 <style lang="stylus">
 .citiesList
   text-align center
+  font-size 11px
   & span:not(:last-child)::after
     content '-'
 </style>

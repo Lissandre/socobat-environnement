@@ -1,35 +1,55 @@
 <template>
-  <div class="home" id="home">
+  <div id="home" class="home">
     <h2>Nos services</h2>
     <div class="services">
       <div class="service">
-        <img src="@/assets/images/gravat.png" alt="">
+        <img src="@/assets/images/evacuation-dechets-socobat-environnement-montreuil-bobigny-amiante-gravats-bois-metals.png" alt="">
         <span>
-          Évacuation des déchets
+          <strong>
+            Évacuation des déchets
+          </strong>
+        </span>
+        <span>
+          Socobat Environnement intervient dans toutes les villes de Seine-Saint-Denis (93), dans vos locaux ou sur vos chantiers afin d’évacuer les déchets encombrants (vrac, gravats, bois, métaux, cartons, emballages, terre, amiante, plomb).
         </span>
       </div>
       <div class="service">
-        <img src="@/assets/images/camion.png" alt="">
+        <img src="@/assets/images/location-materiel-socobat-environnement-montreuil-bobigny-amiante-gravats-bois-metals.png" alt="">
         <span>
-          Location de matériels
+          <strong>
+            Location de matériels
+          </strong>
+        </span>
+        <span>
+          Afin de vous assister sur vos chantiers de Seine-Saint-Denis (93), Socobat Environnement met à disposition des bennes, des big bags, des bases vie autonomes et un camion benne doté d’une grue et d’un chauffeur.
         </span>
       </div>
       <div class="service">
-        <img src="@/assets/images/centre.png" alt="">
+        <img src="@/assets/images/depot-dechet-socobat-environnement-montreuil-bobigny-amiante-gravats-bois-metals.png" alt="">
         <span>
-          Dépôt des déchets
+          <strong>
+            Dépôt des déchets
+          </strong>
+        </span>
+        <span>
+          Situé à Bobigny (93000), notre centre de tri vous permet de décharger vos déchets encombrants (vrac, gravats, bois, métaux, cartons, emballages, terre, amiante, plomb) en toute sécurité et en grande quantité.
         </span>
       </div>
       <div class="service">
-        <img src="@/assets/images/trou.png" alt="">
+        <img src="@/assets/images/diagnostic-pollution-socobat-environnement-montreuil-bobigny-amiante-gravats-bois-metals.png" alt="">
         <span>
-          Diagnostic de pollution
+          <strong>
+            Diagnostic de pollution
+          </strong>
+        </span>
+        <span>
+          Afin de réaliser vos projets immobiliers en toute tranquillité, Socobat Environnement s’assure de l’absence de pollution dans les sols de votre futur propriété (exemple : métaux lourds, hydrocarbures, polluants).
         </span>
       </div>
     </div>
     <div class="bloc">
       <div class="imageMask">
-        <img src="@/assets/images/dechet.jpg" alt="">
+        <img src="@/assets/images/socobat-environnement-traitement-dechets-enlevement-ile-de-france-bobigny.jpg" alt="">
       </div>
       <div class="text">
         <p>
@@ -55,7 +75,7 @@
     </div>
     <div class="bloc mobileReverse">
       <div class="imageMask">
-        <img src="@/assets/images/devis.jpg" alt="">
+        <img src="@/assets/images/socobat-environnement-demande-devis-en-ligne-93-dechets-location-benne-depots.jpg" alt="">
       </div>
       <div class="text">
         <h2>
@@ -88,17 +108,21 @@ export default {
 </script>
 
 <style lang="stylus">
+.home h2
+  text-align center
+
 .services
   display flex
   justify-content space-between
   & .service
-    width 16%
+    width 18%
     text-align center
     & img
       width 80%
       border-radius 50%
     & span
       font-size 20px
+      display block
 
 .bloc
   display flex
