@@ -66,10 +66,10 @@ export default {
     padding 0 10%
     box-sizing border-box
     & h1
-      font-size 46px
+      font-size 40px
       & span
         margin-top 5%
-        font-size 34px
+        font-size 28px
     & .devisButton
-      bottom 20%
+      bottom 16%
 </style>

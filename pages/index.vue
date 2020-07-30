@@ -155,7 +155,7 @@ export default {
     flex-direction row
     flex-wrap wrap
     & .service
-      width 45%
+      width 100%
       display flex
       align-items center
       justify-content space-between
@@ -173,6 +173,7 @@ export default {
     & .text
       & p
         font-size 16px
+        text-align center
     &.mobileReverse
       flex-direction column-reverse
       margin-top 15%

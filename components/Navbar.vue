@@ -6,8 +6,37 @@
       </nuxt-link>
     </div>
     <div class="hamburgerButton" @click="changeMenu()">
-      <img v-if="!menu" src="@/assets/images/menu/menu.svg" alt="Icone menu fermé hamburger Socobat Environnement">
-      <img v-if="menu" src="@/assets/images/menu/cross.svg" alt="Icone menu ouvert hamburger Socobat Environnement">
+      <svg
+        v-if="!menu"
+        :class="this.$route.name === 'index' ? 'white' : 'black'"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-menu"
+      >
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+      <svg
+        v-if="menu"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-x"
+      ><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
     </div>
     <ul class="linksList" :class="{ open: menu }">
       <li @click="closeMenu()">
@@ -45,8 +74,11 @@ export default {
   mounted: function () {
     if (this.$route.name === 'index') {
       const nav = document.querySelector('nav')
+      const menu = document.querySelector('.feather-menu')
+      // eslint-disable-next-line
+      console.log(this)
       window.addEventListener('scroll', function () {
-        if (scrollY > 0) { nav.classList.add('white'); nav.classList.remove('transp') } else if (scrollY === 0) { nav.classList.add('transp'); nav.classList.remove('white') }
+        if (scrollY > 0) { nav.classList.add('white'); nav.classList.remove('transp'); if (menu.classList.contains('white')) { menu.classList.remove('white'); menu.classList.add('black') } } else if (scrollY === 0) { nav.classList.add('transp'); nav.classList.remove('white'); if (!menu.classList.contains('white')) { menu.classList.remove('black'); menu.classList.add('white') } }
       })
     }
   },
@@ -89,6 +121,12 @@ export default {
 .hamburgerButton
   display none
   cursor pointer
+  & svg
+    height 100%
+    &.white
+      color #fff
+    &.black
+      color #000
 
 .linksList
   // background $white

@@ -18,7 +18,7 @@
         <span>
           Socobat Environnement
         </span>
-        <a href="https://goo.gl/maps/UHrZ9PbgkEhjLDW3A" target="_blank">47 rue de la Ferme, 93102 Montreuil</a>
+        <a href="https://goo.gl/maps/GsUf3qMZ99B6mPTX7" target="_blank" rel="noopener noreferrer">18 rue Albert Einstein à Bobigny (93000)</a>
       </p>
     </div>
   </div>

@@ -47,7 +47,7 @@ export default {
   justify-content center
 .triList
   & p
-    margin 10% auto
+    margin 5% auto
     text-align center
     & span
       font-weight lighter
