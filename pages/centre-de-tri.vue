@@ -49,8 +49,8 @@ export default {
   & p
     margin 5% auto
     text-align center
+    font-size 20px
     & span
-      font-weight lighter
       display block
       margin-bottom 2%
     & a, .sub
@@ -60,10 +60,9 @@ export default {
 
 @media screen and (max-width: 840px)
   .tri
-    padding-top 10%
     position inherit
     width 100%
-    height 50%
+    height auto
     & h1
       visibility hidden
     & .triList p

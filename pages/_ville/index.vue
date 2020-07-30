@@ -90,6 +90,7 @@ export default {
   & p
     margin-bottom 2%
     width 45%
+    font-size 20px
   & h1
     margin-bottom 5%
     width 80%

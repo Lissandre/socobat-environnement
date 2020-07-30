@@ -44,8 +44,8 @@ export default {
   & p
     margin 10% auto
     text-align center
+    font-size 20px
     & span
-      font-weight lighter
       display block
       margin-bottom 2%
     & a
@@ -55,10 +55,10 @@ export default {
 
 @media screen and (max-width: 840px)
   .contact
-    padding-top 10%
+    margin-top 16%
     position inherit
     width 100%
-    height 50%
+    height auto
     & h1
       visibility hidden
     & .contactList p
@@ -70,6 +70,5 @@ export default {
 
 @media screen and (max-width: 420px)
   .contact
-      height 100%
       padding 0 5%
 </style>

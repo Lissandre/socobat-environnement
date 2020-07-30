@@ -35,7 +35,7 @@ export default {}
   background #fff
   display flex
   justify-content center
-  margin-top 20px
+  padding-top 4%
 
 .texteConfidentialite
   width 650px
@@ -48,4 +48,8 @@ ul
   margin 10px 0
 h4
   margin-bottom 12px
+
+@media screen and (max-width: 840px)
+  .legal
+    padding-top 20%
 </style>

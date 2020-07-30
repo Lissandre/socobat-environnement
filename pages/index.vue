@@ -134,6 +134,9 @@ export default {
     flex-direction row-reverse
   & .text
     width 45%
+    & p
+      text-align left
+      font-size 20px
   & .imageMask
     width 45%
     height 400px
@@ -148,6 +151,7 @@ export default {
   width 35%
   margin 5% auto 2% auto
   text-align center
+  font-size 20px
 
 @media screen and (max-width: 840px)
   .services
