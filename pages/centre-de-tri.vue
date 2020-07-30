@@ -3,57 +3,77 @@
     <h1>
       Centre de tri
     </h1>
-    <div class="geo">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10490.105719237943!2d2.420433308611232!3d48.90536177455487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66cef8dd7c8d3%3A0x97e3ee691454dad6!2s18%20Rue%20Albert%20Einstein%2C%2093000%20Bobigny!5e0!3m2!1sfr!2sfr!4v1584353150767!5m2!1sfr!2sfr"
-        width="800"
-        height="600"
-        frameborder="0"
-        style="border:0;"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      />
-      <a href="https://goo.gl/maps/GsUf3qMZ99B6mPTX7" target="_blank" rel="noopener noreferrer">18 rue Albert Einstein à Bobigny (93000)</a>
+    <div class="triList">
+      <p>
+        <span>Horaires des bureaux</span>
+        <span class="sub">9h - 18h.</span>
+      </p>
+      <p>
+        <span>Horaires du centre</span>
+        <span class="sub">7h - 17h.</span>
+      </p>
+      <p>
+        <span>Les déchets acceptés</span>
+        <span class="sub">Vrac, Gravats, Bois, Métaux, Cartons & emballages, Autres types (terre, amiante, plomb)</span>
+      </p>
+      <p>
+        <span>Les documents à apporter pour récupération des déchets d'amiante</span>
+        <span class="sub">BDSA (Bordereau de suivi des déchets d'amiante).</span>
+      </p>
+      <p>
+        <span>Adresse</span>
+        <a href="https://goo.gl/maps/GsUf3qMZ99B6mPTX7" target="_blank" rel="noopener noreferrer">18 rue Albert Einstein à Bobigny (93000)</a>
+      </p>
     </div>
-    <h3>
-      Horaires
-    </h3>
-    <p>
-      Du lundi au dimanche de 9h à 19h.
-    </p>
-    <h3>
-      Les déchets acceptés
-    </h3>
-    <p>
-      Petite liste des déchets
-    </p>
-    <h3>
-      Les documents à apporter
-    </h3>
-    <p>
-      Petite liste des documents importants
-    </p>
-    <h3>
-      Le centre
-    </h3>
-    <p>
-      Le centre de tri de Bobigny (93000) permet aux entreprises des villes environnentes d'apporter leurs différents déchets afin de les trier et de leur offrir une seconde vie.
-    </p>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  layout: 'centre-tri'
+}
 </script>
 
 <style lang="stylus">
 .tri
-  & h1
-    margin-bottom 32px
-  & .geo
-    display flex
-    flex-direction column
-  & h3
-    margin-top 32px
+  padding-top 6%
+  position absolute
+  left 0
+  width 50%
+  height 100%
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+.triList
+  & p
+    margin 5% auto
+    text-align center
+    font-size 20px
+    & span
+      display block
+      margin-bottom 2%
+    & a, .sub
+      color $green
+    & a:hover
+      color $lightgreen
+
+@media screen and (max-width: 840px)
+  .tri
+    position inherit
+    width 100%
+    height auto
+    & h1
+      visibility hidden
+    & .triList p
+      & span
+        font-size 18px
+        font-weight normal
+      & a, .sub
+        font-size 20px
+
+@media screen and (max-width: 420px)
+  .tri
+      height 100%
+      padding 0 5%
 </style>

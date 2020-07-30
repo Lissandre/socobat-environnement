@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="{name: 'devis'}" class="devisButton">
+  <nuxt-link :to="{name: 'demande-de-devis'}" class="devisButton">
     Demander un devis
   </nuxt-link>
 </template>
@@ -19,6 +19,9 @@ export default {}
   display block
   width fit-content
   margin 0 auto
+  transition 0.3s transform ease
+  &:hover
+    transform scale(0.95)
 
 @media screen and (max-width: 840px)
   .devisButton

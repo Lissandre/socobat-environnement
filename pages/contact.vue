@@ -6,7 +6,7 @@
         <span>
           Vous voulez nous passer un coup de fil ?
         </span>
-        <a href="tel:+">01 02 03 04 05</a>
+        <a href="tel:+33184740485">01 84 74 04 85</a>
       </p>
       <p>
         <span>
@@ -18,7 +18,7 @@
         <span>
           Socobat Environnement
         </span>
-        <a href="https://goo.gl/maps/UHrZ9PbgkEhjLDW3A" target="_blank">47 rue de la Ferme, 93102 Montreuil</a>
+        <a href="https://goo.gl/maps/GsUf3qMZ99B6mPTX7" target="_blank" rel="noopener noreferrer">18 rue Albert Einstein à Bobigny (93000)</a>
       </p>
     </div>
   </div>
@@ -44,8 +44,8 @@ export default {
   & p
     margin 10% auto
     text-align center
+    font-size 20px
     & span
-      font-weight lighter
       display block
       margin-bottom 2%
     & a
@@ -55,10 +55,10 @@ export default {
 
 @media screen and (max-width: 840px)
   .contact
-    padding-top 10%
+    margin-top 16%
     position inherit
     width 100%
-    height 50%
+    height auto
     & h1
       visibility hidden
     & .contactList p
@@ -70,6 +70,5 @@ export default {
 
 @media screen and (max-width: 420px)
   .contact
-      height 100%
       padding 0 5%
 </style>

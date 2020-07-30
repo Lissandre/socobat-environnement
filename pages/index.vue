@@ -1,35 +1,55 @@
 <template>
-  <div class="home">
+  <div id="home" class="home">
     <h2>Nos services</h2>
     <div class="services">
       <div class="service">
-        <img src="@/assets/images/gravat.png" alt="">
+        <img src="@/assets/images/evacuation-dechets-socobat-environnement-montreuil-bobigny-amiante-gravats-bois-metals.png" alt="">
         <span>
-          Évacuation des déchets
+          <strong>
+            Évacuation des déchets
+          </strong>
+        </span>
+        <span>
+          Socobat Environnement intervient dans toutes les villes de Seine-Saint-Denis (93), dans vos locaux ou sur vos chantiers afin d’évacuer les déchets encombrants (vrac, gravats, bois, métaux, cartons, emballages, terre, amiante, plomb).
         </span>
       </div>
       <div class="service">
-        <img src="@/assets/images/camion.png" alt="">
+        <img src="@/assets/images/location-materiel-socobat-environnement-montreuil-bobigny-amiante-gravats-bois-metals.png" alt="">
         <span>
-          Location de matériels
+          <strong>
+            Location de matériels
+          </strong>
+        </span>
+        <span>
+          Afin de vous assister sur vos chantiers de Seine-Saint-Denis (93), Socobat Environnement met à disposition des bennes, des big bags, des bases vie autonomes et un camion benne doté d’une grue et d’un chauffeur.
         </span>
       </div>
       <div class="service">
-        <img src="@/assets/images/centre.png" alt="">
+        <img src="@/assets/images/depot-dechet-socobat-environnement-montreuil-bobigny-amiante-gravats-bois-metals.png" alt="">
         <span>
-          Dépôt des déchets
+          <strong>
+            Dépôt des déchets
+          </strong>
+        </span>
+        <span>
+          Situé à Bobigny (93000), notre centre de tri vous permet de décharger vos déchets encombrants (vrac, gravats, bois, métaux, cartons, emballages, terre, amiante, plomb) en toute sécurité et en grande quantité.
         </span>
       </div>
       <div class="service">
-        <img src="@/assets/images/trou.png" alt="">
+        <img src="@/assets/images/diagnostic-pollution-socobat-environnement-montreuil-bobigny-amiante-gravats-bois-metals.png" alt="">
         <span>
-          Diagnostic de pollution
+          <strong>
+            Diagnostic de pollution
+          </strong>
+        </span>
+        <span>
+          Afin de réaliser vos projets immobiliers en toute tranquillité, Socobat Environnement s’assure de l’absence de pollution dans les sols de votre futur propriété (exemple : métaux lourds, hydrocarbures, polluants).
         </span>
       </div>
     </div>
     <div class="bloc">
       <div class="imageMask">
-        <img src="@/assets/images/dechet.jpg" alt="">
+        <img src="@/assets/images/socobat-environnement-traitement-dechets-enlevement-ile-de-france-bobigny.jpg" alt="">
       </div>
       <div class="text">
         <p>
@@ -55,7 +75,7 @@
     </div>
     <div class="bloc mobileReverse">
       <div class="imageMask">
-        <img src="@/assets/images/devis.jpg" alt="">
+        <img src="@/assets/images/socobat-environnement-demande-devis-en-ligne-93-dechets-location-benne-depots.jpg" alt="">
       </div>
       <div class="text">
         <h2>
@@ -63,7 +83,7 @@
         </h2>
         <p>
           Comment notre système fonctionne ? <br>
-          Nos prix sont entièrement transparents. En cliquant sur l’onglet “Devis”, vous êtes amené à sélectionner les services que vous nous demandez, puis un devis sera automatiquement généré avec le prix que cette prestation vous côuterait. Il ne reste plus qu'à nous contacter si notre proposition vous convient, et nous nous chargeons du reste ! La création d’un devis est entièrement gratuite et transparente.
+          Nos prix sont entièrement transparents. En cliquant sur l’onglet “Devis”, vous êtes amené à compléter un formulaire pour que nous sachions quels sont les services que vous nous demandez. Nous vous contacterons au plus vite après la réception de ce formulaire pour établir un devis avec vous. La création d’un devis est entièrement gratuite et transparente.
         </p>
       </div>
     </div>
@@ -88,17 +108,21 @@ export default {
 </script>
 
 <style lang="stylus">
+.home h2
+  text-align center
+
 .services
   display flex
   justify-content space-between
   & .service
-    width 16%
+    width 18%
     text-align center
     & img
       width 80%
       border-radius 50%
     & span
       font-size 20px
+      display block
 
 .bloc
   display flex
@@ -110,6 +134,9 @@ export default {
     flex-direction row-reverse
   & .text
     width 45%
+    & p
+      text-align left
+      font-size 20px
   & .imageMask
     width 45%
     height 400px
@@ -124,6 +151,7 @@ export default {
   width 35%
   margin 5% auto 2% auto
   text-align center
+  font-size 20px
 
 @media screen and (max-width: 840px)
   .services
@@ -131,7 +159,7 @@ export default {
     flex-direction row
     flex-wrap wrap
     & .service
-      width 45%
+      width 100%
       display flex
       align-items center
       justify-content space-between
@@ -149,6 +177,7 @@ export default {
     & .text
       & p
         font-size 16px
+        text-align center
     &.mobileReverse
       flex-direction column-reverse
       margin-top 15%

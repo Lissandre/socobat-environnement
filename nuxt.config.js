@@ -1,8 +1,8 @@
 
 export default {
-  server: {     
-    port: 8000, // default: 3000     
-    host: '0.0.0.0', // default: localhost   
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0' // default: localhost
   },
   mode: 'universal',
   /*
@@ -37,18 +37,18 @@ export default {
       { property: 'og:image', content: 'https://socobat-environnement.netlify.com/social/share-1200x630.jpg' }
     ],
     link: [
-      // { rel: 'icon', type: 'image/x-icon', href: 'favicon/favicon.ico' },
-      // { rel: 'icon', type: 'image/png', href: 'favicon/favicon-32x32.png' },
-      // { rel: 'icon', type: 'image/png', href: 'favicon/favicon-16x16.png' },
-      // { rel: 'apple-touch-icon', sizes: '180x180', href: 'favicon/apple-touch-icon.png' },
-      // { rel: 'manifest', href: 'favicon/site.webmanifest' },
-      // { rel: 'mask-icon', href: 'favicon/safari-pinned-tab.svg', color: '#006633' }
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: 'favicon/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', href: 'favicon/favicon-16x16.png' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: 'favicon/apple-touch-icon.png' },
+      { rel: 'manifest', href: 'favicon/site.webmanifest' },
+      { rel: 'mask-icon', href: 'favicon/safari-pinned-tab.svg', color: '#006633' }
     ]
   },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#3aaa35' },
   /*
   ** Global CSS
   */
@@ -59,13 +59,17 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~plugins/ga.js', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-173950467-1'
+    }]
   ],
   /*
   ** Nuxt.js modules

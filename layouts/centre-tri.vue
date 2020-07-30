@@ -1,7 +1,7 @@
 <template>
-  <div class="contactPage">
+  <div class="centrePage">
     <Navbar />
-    <div class="containerContact">
+    <div class="containerCentreTri">
       <nuxt />
       <iframe
         id="frame"
@@ -34,9 +34,9 @@ export default {
 </script>
 
 <style lang="stylus">
-.contactPage
+.centrePage
   min-height calc(var(--vh, 1vh) * 100)
-  & .containerContact
+  & .containerCentreTri
     height calc(var(--vh, 1vh) * 100)
     & iframe
       position absolute
@@ -46,12 +46,12 @@ export default {
       width 50%
 
 @media screen and (max-width: 840px)
-  .containerContact
+  .containerCentreTri
     width 100%
     height 100%
     display flex
     flex-direction column
-    margin-top 10%
+    margin-top 24%
     & iframe#frame
       position inherit
       margin 0 auto
@@ -59,7 +59,7 @@ export default {
       width 90%
 
 @media screen and (max-width: 420px)
-  .containerContact
+  .containerCentreTri
     width 100%
     height 100%
     display flex
