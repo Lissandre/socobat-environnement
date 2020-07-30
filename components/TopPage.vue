@@ -51,6 +51,7 @@ export default {
       font-size 48px
       font-weight lighter
   & .devisButton
+    width auto
     position absolute
     bottom 25%
 

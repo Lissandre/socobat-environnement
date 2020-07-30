@@ -109,6 +109,7 @@ export default {
   align-items center
   z-index 2
   transition 0.52s background ease, 0.32s box-shadow ease
+  font-size 16px !important
   &.white
     background $white
     box-shadow $shadow
@@ -146,6 +147,7 @@ export default {
       align-items center
       color $green
       text-transform uppercase
+      font-size 16px !important
       &:hover
         transition color 0.23s ease
         color $lightergreen
@@ -155,6 +157,7 @@ export default {
       padding 12px 20px
       color $white
       transition 0.3s transform ease
+      font-size 16px !important
       &:hover
         transform scale(0.95)
 
