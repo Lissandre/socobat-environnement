@@ -217,10 +217,15 @@ export default {}
 p
   margin-bottom 30px
   text-align justify
+  font-size 20px
 ul
   list-style inside
   margin 10px 0
+  font-size 20px
+h3
+  font-size 24px
 h4
+  font-size 22px
   margin-bottom 12px
 
 @media screen and (max-width: 840px)
