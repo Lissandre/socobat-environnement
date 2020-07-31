@@ -17,7 +17,7 @@
         Adresse du siège social : 47 RUE DE LA FERME 93100 MONTREUIL
       </p>
       <p>
-        Responsable publication : SOCOBAT ENVIRONNEMENT – <a href="mailto:contact@socobat-environnement.fr">contact@socobat-environnement.fr</a> <br>
+        Responsable publication : SOCOBAT ENVIRONNEMENT – <a href="mailto:contact@socobat-environnement.fr?subject=Demande%20de%20contact%20site">contact@socobat-environnement.fr</a> <br>
         Le responsable publication est une personne morale. <br>
         Webmaster : TATCHI – contact@tatchi.fr <br>
         Hébergeur : OVH – 2 Rue Kellermann 59100 ROUBAIX
