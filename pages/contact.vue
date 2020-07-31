@@ -12,7 +12,7 @@
         <span>
           Vous avez besoin de nous envoyer un mail ?
         </span>
-        <a href="mailto:">contact@mail.fr</a>
+        <a href="mailto:contact@socobat-environnement.fr">contact@socobat-environnement.fr</a>
       </p>
       <p>
         <span>
