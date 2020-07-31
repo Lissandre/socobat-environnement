@@ -21,19 +21,19 @@ export default {
       { name: 'theme-color', content: process.env.theme_color || '#ffffff' },
 
       { itemprop: 'name', content: 'Socobat Environnement' },
-      { itemprop: 'description', content: 'Socobat Environnement Description' },
+      { itemprop: 'description', content: 'Spécialiste du traitement des dechets, centre de tri et location de bennes' },
       { itemprop: 'image', content: 'https://socobat-environnement.netlify.com/social/share-1200x630.jpg' },
 
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Socobat Environnement' },
-      { name: 'twitter:description', content: 'Socobat Environnement Description' },
+      { name: 'twitter:description', content: 'Spécialiste du traitement des dechets, centre de tri et location de bennes' },
       { name: 'twitter:image', content: 'https://socobat-environnement.netlify.com/social/share-1200x600.jpg' },
 
       { property: 'og:site_name', content: 'Socobat Environnement' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://socobat-environnement.netlify.com' },
       { property: 'og:title', content: 'Socobat Environnement' },
-      { property: 'og:description', content: 'Socobat Environnement Description' },
+      { property: 'og:description', content: 'Spécialiste du traitement des dechets, centre de tri et location de bennes' },
       { property: 'og:image', content: 'https://socobat-environnement.netlify.com/social/share-1200x630.jpg' }
     ],
     link: [

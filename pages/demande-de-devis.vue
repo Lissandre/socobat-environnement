@@ -26,6 +26,19 @@ export default {
       vh = window.innerHeight * 0.01
       document.documentElement.style.setProperty('--vh', `${vh}px`)
     })
+  },
+  head () {
+    return {
+      title: 'Socobat Environnement - Demande de devis',
+      meta: [
+        // hid est utilisé comme identifiant unique. N'utilisez pas `vmid` car ça ne fonctionnera pas
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Socobat Environnement vous propose une location de matériels, une évacuation de vos déchets et des analyses de sols. Demandez votre devis pour faire appel à nos services.'
+        }
+      ]
+    }
   }
 }
 </script>

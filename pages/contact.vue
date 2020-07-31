@@ -12,7 +12,7 @@
         <span>
           Vous avez besoin de nous envoyer un mail ?
         </span>
-        <a href="mailto:">contact@mail.fr</a>
+        <a href="mailto:contact@socobat-environnement.fr">contact@socobat-environnement.fr</a>
       </p>
       <p>
         <span>
@@ -26,7 +26,20 @@
 
 <script>
 export default {
-  layout: 'contact'
+  layout: 'contact',
+  head () {
+    return {
+      title: 'Socobat Environnement - Contactez-nous',
+      meta: [
+        // hid est utilisé comme identifiant unique. N'utilisez pas `vmid` car ça ne fonctionnera pas
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Page de contact de Socobat Environnement.'
+        }
+      ]
+    }
+  }
 }
 </script>
 

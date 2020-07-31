@@ -103,6 +103,19 @@ export default {
   components: {
     AskDevis,
     CitiesList
+  },
+  head () {
+    return {
+      title: 'Socobat Environnement - Accueil',
+      meta: [
+        // hid est utilisé comme identifiant unique. N'utilisez pas `vmid` car ça ne fonctionnera pas
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Page d\'accueil de Socobat Environnement. Location de matériel, évacuation de déchets, analyse des sols, n\'hésitez pas à faire appel à nos services.'
+        }
+      ]
+    }
   }
 }
 </script>
