@@ -26,7 +26,20 @@
 
 <script>
 export default {
-  layout: 'contact'
+  layout: 'contact',
+  head () {
+    return {
+      title: 'Socobat Environnement - Contactez-nous',
+      meta: [
+        // hid est utilisé comme identifiant unique. N'utilisez pas `vmid` car ça ne fonctionnera pas
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Page de contact de Socobat Environnement.'
+        }
+      ]
+    }
+  }
 }
 </script>
 

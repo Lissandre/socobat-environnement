@@ -30,6 +30,19 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: 'Socobat Environnement - Centre de tri',
+      meta: [
+        // hid est utilisé comme identifiant unique. N'utilisez pas `vmid` car ça ne fonctionnera pas
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Besoin de faire évacuer vos déchets de chantier ? Prenez connaissance des informations nécessaire sur notre centre de tri.'
+        }
+      ]
+    }
+  },
   layout: 'centre-tri'
 }
 </script>

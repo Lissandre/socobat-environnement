@@ -201,7 +201,21 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head () {
+    return {
+      title: 'Socobat Environnement - Politique de confidentialité',
+      meta: [
+        // hid est utilisé comme identifiant unique. N'utilisez pas `vmid` car ça ne fonctionnera pas
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Retrouvez la politique de confidentialité du site de Socobat Environnement.'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="stylus">

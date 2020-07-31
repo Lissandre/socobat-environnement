@@ -68,6 +68,24 @@ export default {
       zip
     }
   },
+  data () {
+    return {
+      zip: ''
+    }
+  },
+  head () {
+    return {
+      title: 'Socobat Environnement',
+      meta: [
+        // hid est utilisé comme identifiant unique. N'utilisez pas `vmid` car ça ne fonctionnera pas
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Évacuation des déchets, location de matériels, analyses des sols, faites confiance à Socobat Environnement dans la gestion de vos déchets de chantier.'
+        }
+      ]
+    }
+  },
   validate ({ params, store }) {
     let response
     store.state.cities.forEach((city) => {
@@ -76,11 +94,6 @@ export default {
       }
     })
     return response
-  },
-  data () {
-    return {
-      zip: ''
-    }
   }
 }
 </script>
