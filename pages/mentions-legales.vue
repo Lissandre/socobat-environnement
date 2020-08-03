@@ -30,7 +30,7 @@
 export default {
   head () {
     return {
-      title: 'Socobat Environnement - Mentions Légales',
+      title: 'Socobat Environnement - Mentions Légales - Spécialiste traitement des déchets en île de France',
       meta: [
         // hid est utilisé comme identifiant unique. N'utilisez pas `vmid` car ça ne fonctionnera pas
         {
