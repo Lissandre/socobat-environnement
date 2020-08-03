@@ -81,7 +81,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Évacuation des déchets, location de matériels, analyses des sols, faites confiance à Socobat Environnement dans la gestion de vos déchets de chantier.'
+          content: 'Évacuation des déchets, location de matériels, analyses des sols, faites confiance à Socobat Environnement dans la gestion de vos déchets de chantier à ' + this.ville +'.'
         }
       ]
     }
