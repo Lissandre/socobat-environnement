@@ -29,7 +29,7 @@ export default {
   layout: 'contact',
   head () {
     return {
-      title: 'Socobat Environnement - Contactez-nous',
+      title: 'Socobat Environnement - Contactez-nous - Spécialiste traitement des déchets en île de France',
       meta: [
         // hid est utilisé comme identifiant unique. N'utilisez pas `vmid` car ça ne fonctionnera pas
         {
