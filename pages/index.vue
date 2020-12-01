@@ -10,7 +10,7 @@
           </strong>
         </span>
         <span>
-          Socobat Environnement intervient dans toutes les villes de Seine-Saint-Denis (93), dans vos locaux ou sur vos chantiers afin d’évacuer les déchets encombrants (vrac, gravats, bois, métaux, cartons, emballages, terre, amiante, plomb).
+          Socobat Environnement intervient dans toute l'Ile de France, dans vos locaux ou sur vos chantiers afin d’évacuer les déchets encombrants (vrac, gravats, bois, métaux, cartons, emballages, terre, amiante, plomb).
         </span>
       </div>
       <div class="service">
@@ -21,7 +21,7 @@
           </strong>
         </span>
         <span>
-          Afin de vous assister sur vos chantiers de Seine-Saint-Denis (93), Socobat Environnement met à disposition des bennes, des big bags, des bases vie autonomes et un camion benne doté d’une grue et d’un chauffeur.
+          Afin de vous assister sur vos chantiers d'Ile de France, Socobat Environnement met à disposition des bennes, des big bags, des bases vie autonomes et un camion benne doté d’une grue et d’un chauffeur.
         </span>
       </div>
       <div class="service">
@@ -53,7 +53,7 @@
       </div>
       <div class="text">
         <p>
-          Besoin d’évacuer ou de traiter vos déchets ? Besoin d’un diagnostic de pollution du sol ? Besoin de matériel pour rassembler vos déchets de chantier ? Socobat Environnement est spécialisé dans l’évacuation et le dépot de vos déchets de chantier. Nous vous proposons la location de matériel et des prestations clé en main pour la gestion de vos déchets, dans tout le département de la Seine-saint-Denis (93). <br>
+          Besoin d’évacuer ou de traiter vos déchets ? Besoin d’un diagnostic de pollution du sol ? Besoin de matériel pour rassembler vos déchets de chantier ? Socobat Environnement est spécialisé dans l’évacuation et le dépot de vos déchets de chantier. Nous vous proposons la location de matériel et des prestations clé en main pour la gestion de vos déchets, dans toute l'Ile de France. <br>
           Socobat Environnement est la solution à tous vos problèmes de déchets de chantier à prix transparent. <br>
           Notre société de gestion des déchets vous propose une aide à l’évacuation des déchets, la location de matériels (big bags, camions bennes, bases vie autonome, etc.), le dépot des déchets dans notre centre de tri, et un diagnostic de pollution du sol par forage.
         </p>
@@ -69,7 +69,7 @@
           Qui sommes-nous ?
         </h2>
         <p>
-          Socobat Environnement est une filliale du groupe SOCOBAT, une entreprise spécialisée dans le management des déchets à risques, le désamiantage et les solutions techniques dans les projets d’ingenierie civile. Socobat Environnement, spécialisé dans la gestion des déchets de chantier intervient dans tout le département de la Seine-saint-Denis (93). Nous proposons les services suivants: Évacuation de déchets ou gravas, location de Big Bags, bennes et récupération sur site, location de bases vie autonomes, étude de sol par forage, dépot de déchets dans un centre de tri, location de camion benne avec grue + chauffeur (à l’heure), transport des déchets amiante de votre chantier ou dépot jusqu’au centre de traitement.
+          Socobat Environnement est une filliale du groupe SOCOBAT, une entreprise spécialisée dans le management des déchets à risques, le désamiantage et les solutions techniques dans les projets d’ingenierie civile. Socobat Environnement, spécialisé dans la gestion des déchets de chantier intervient dans toute l'Ile de France. Nous proposons les services suivants: Évacuation de déchets ou gravas, location de Big Bags, bennes et récupération sur site, location de bases vie autonomes, étude de sol par forage, dépot de déchets dans un centre de tri, location de camion benne avec grue + chauffeur (à l’heure), transport des déchets amiante de votre chantier ou dépot jusqu’au centre de traitement.
         </p>
       </div>
     </div>

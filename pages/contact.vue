@@ -7,6 +7,10 @@
           Vous voulez nous passer un coup de fil ?
         </span>
         <a href="tel:+33184740485">01 84 74 04 85</a>
+        <span>
+          Boubacar SYLLA, joignable de 7h à 18h.
+        </span>
+        <a href="tel:+33698190141">06 98 19 01 41</a>
       </p>
       <p>
         <span>
