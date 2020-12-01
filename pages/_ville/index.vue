@@ -58,8 +58,8 @@ export default {
   },
   asyncData ({ route, params, store }) {
     let zip
-    store.state.cities.forEach((dep) => {
-      dep.forEach((city) => {
+    store.state.deps.forEach((dep) => {
+      store.state.cities[dep.zip].forEach((city) => {
         if (city.name === params.ville) {
           zip = city.zip
         }
@@ -90,8 +90,8 @@ export default {
   },
   validate ({ params, store }) {
     let response
-    store.state.cities.forEach((dep) => {
-      dep.forEach((city) => {
+    store.state.deps.forEach((dep) => {
+      store.state.cities[dep.zip].forEach((city) => {
         if (city.name === params.ville) {
           response = true
         }

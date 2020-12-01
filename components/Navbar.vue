@@ -75,8 +75,6 @@ export default {
     if (this.$route.name === 'index') {
       const nav = document.querySelector('nav')
       const menu = document.querySelector('.feather-menu')
-      // eslint-disable-next-line
-      console.log(this)
       window.addEventListener('scroll', function () {
         if (scrollY > 0) { nav.classList.add('white'); nav.classList.remove('transp'); if (menu.classList.contains('white')) { menu.classList.remove('white'); menu.classList.add('black') } } else if (scrollY === 0) { nav.classList.add('transp'); nav.classList.remove('white'); if (!menu.classList.contains('white')) { menu.classList.remove('black'); menu.classList.add('white') } }
       })
