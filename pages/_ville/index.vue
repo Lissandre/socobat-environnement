@@ -58,10 +58,12 @@ export default {
   },
   asyncData ({ route, params, store }) {
     let zip
-    store.state.cities.forEach((city) => {
-      if (city.name === params.ville) {
-        zip = city.zip
-      }
+    store.state.cities.forEach((dep) => {
+      dep.forEach((city) => {
+        if (city.name === params.ville) {
+          zip = city.zip
+        }
+      })
     })
     return {
       ville: route.params.ville,
@@ -81,17 +83,19 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Évacuation des déchets, location de matériels, analyses des sols, faites confiance à Socobat Environnement dans la gestion de vos déchets de chantier à ' + this.ville +'.'
+          content: 'Évacuation des déchets, location de matériels, analyses des sols, faites confiance à Socobat Environnement dans la gestion de vos déchets de chantier à ' + this.ville + '.'
         }
       ]
     }
   },
   validate ({ params, store }) {
     let response
-    store.state.cities.forEach((city) => {
-      if (city.name === params.ville) {
-        response = true
-      }
+    store.state.cities.forEach((dep) => {
+      dep.forEach((city) => {
+        if (city.name === params.ville) {
+          response = true
+        }
+      })
     })
     return response
   }
