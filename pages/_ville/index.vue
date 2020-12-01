@@ -21,7 +21,9 @@
       </p>
       <p>
         Comment cela se passe pour une évacuation de vos déchets, une location, une étude du sol sur {{ ville }} {{ zip }} ?
-        Vous pouvez répondre à [[ ce questionnaire ]] afin d’établir un devis transparent et instantané pour votre demande. Il vous suffira de nous le retourner signé pour nous permettre de vous contacter et de vous fournir les services demandés sur {{ ville }} {{ zip }}.
+        Vous pouvez répondre à <nuxt-link to="demande-de-devis">
+          ce questionnaire
+        </nuxt-link> afin d’établir un devis transparent et pour nous permettre de vous contacter et de vous fournir les services demandés sur {{ ville }} {{ zip }}.
       </p>
       <p>
         Nous vous indiquons un prix HT et TTC pour l’évacuation des déchets, la location de camions bennes, avec ou sans grue et chauffeur, la location de bases vie autonomes, la location de big bags, une étude du sol par forage, une évacuation et un traitement des déchets amiante sur {{ ville }}. Vous décidez ou non de prendre rendez-vous pour ces services sur {{ ville }} {{ zip }}.
@@ -32,7 +34,7 @@
     </div>
     <div class="list">
       <p>
-        Socobat Environnement intervient sur {{ ville }} {{ zip }} pour l’évacuation des déchets, la location de camions bennes, avec ou sans grue et chauffeur, la location de bases vie autonomes, la location de big bags, une étude du sol par forage, une évacuation et un traitement des déchets amiante, mais également dans toutes les villes de Seine-Saint-Denis 93 :
+        Socobat Environnement intervient sur {{ ville }} {{ zip }} pour l’évacuation des déchets, la location de camions bennes, avec ou sans grue et chauffeur, la location de bases vie autonomes, la location de big bags, une étude du sol par forage, une évacuation et un traitement des déchets amiante, mais également dans toutes les villes d'Ile de France:
       </p>
       <CitiesList />
     </div>
@@ -55,6 +57,17 @@ import CitiesList from '@/components/CitiesList'
 export default {
   components: {
     CitiesList
+  },
+  validate ({ params, store }) {
+    let response
+    store.state.deps.forEach((dep) => {
+      store.state.cities[dep.zip].forEach((city) => {
+        if (city.name === params.ville) {
+          response = true
+        }
+      })
+    })
+    return response
   },
   asyncData ({ route, params, store }) {
     let zip
@@ -87,17 +100,6 @@ export default {
         }
       ]
     }
-  },
-  validate ({ params, store }) {
-    let response
-    store.state.deps.forEach((dep) => {
-      store.state.cities[dep.zip].forEach((city) => {
-        if (city.name === params.ville) {
-          response = true
-        }
-      })
-    })
-    return response
   }
 }
 </script>

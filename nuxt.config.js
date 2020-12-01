@@ -1215,7 +1215,7 @@ export default {
       '/Villeneuve-Saint-Georges',
       '/Villiers-sur-Marne',
       '/Vincennes',
-      '/Vitry-sur-Seine',
+      '/Vitry-sur-Seine'
     ]
   }
 }

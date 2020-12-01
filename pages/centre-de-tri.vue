@@ -30,6 +30,7 @@
 
 <script>
 export default {
+  layout: 'centre-tri',
   head () {
     return {
       title: 'Socobat Environnement - Centre de tri - Spécialiste traitement des déchets en île de France',
@@ -42,8 +43,7 @@ export default {
         }
       ]
     }
-  },
-  layout: 'centre-tri'
+  }
 }
 </script>
 

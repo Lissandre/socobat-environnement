@@ -99,11 +99,11 @@
 import AskDevis from '@/components/AskDevis'
 import CitiesList from '@/components/CitiesList'
 export default {
-  layout: 'home',
   components: {
     AskDevis,
     CitiesList
   },
+  layout: 'home',
   head () {
     return {
       title: 'Socobat Environnement - Accueil - Spécialiste traitement des déchets en île de France',
