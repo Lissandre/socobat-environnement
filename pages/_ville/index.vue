@@ -130,6 +130,8 @@ export default {
     margin-bottom 2%
 
 @media screen and (max-width: 840px)
+  iframe
+    display none
   .textCity
     padding-top 15%
     & p, & h1
